@@ -1,0 +1,20 @@
+project1  初识C语言
+project2  数据类型
+project3  变量的作用域与生命周期
+project4  常量
+project5  字符串
+project6  转义字符
+project7  选择语句循环语句
+project8  函数和数组
+project9  操作符
+project10  操作符2
+project11  关键字
+project12  define
+project13  指针
+project14  结构体
+project15  实验程序
+project16  分支结构（IF  else）
+project17  分支结构（switch）
+project18  循环结构(while)及getchar的使用 
+project19  循环结构(for) 
+project20  函数嵌套、链式访问、函数递归
