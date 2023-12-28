@@ -4,11 +4,11 @@
 int main()
 {
 	//char arr[max] = { 0,1 };
-	//printf("%d", arr[1]);//¿ÉÒÔµÄ  define¶¨ÒåµÄ±êÊ¶·ûÊÇ³£Á¿£¬constÏŞÖÆµÄÊÇ³£±äÁ¿£¬±¾ÖÊ»¹ÊÇ±äÁ¿
+	//printf("%d", arr[1]);//å¯ä»¥çš„  defineå®šä¹‰çš„æ ‡è¯†ç¬¦æ˜¯å¸¸é‡ï¼Œconsté™åˆ¶çš„æ˜¯å¸¸å˜é‡ï¼Œæœ¬è´¨è¿˜æ˜¯å˜é‡
 
-	//enum sex{male, female, secret};
+	//enum sex{male, female, secret};//æšä¸¾å¸¸é‡çš„ä½¿ç”¨
 	//printf("%d\n", male);
 	//printf("%d\n", female);
-	//printf("%d\n", secret);  //Ã¶¾Ù³£Á¿£¬´Ó0¿ªÊ¼
+	//printf("%d\n", secret);  //æšä¸¾å¸¸é‡ï¼Œä»0å¼€å§‹
 	return 0;
 }
