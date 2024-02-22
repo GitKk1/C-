@@ -8,7 +8,7 @@
 //	printf("c : %d\n", c);
 //	*Tem = 1;
 //}
-//int main()     //º¯Êı´«²Î
+//int main()     //å‡½æ•°ä¼ å‚
 //{
 //	int a = 10;
 //	int* pa = &a;
@@ -19,7 +19,7 @@
 /******************************************************************/
 
 /******************************************************************/
-//int main()             //ÓÃÖ¸ÕëÅĞ¶Ï×Ö·û´®³¤¶È
+//int main()             //ç”¨æŒ‡é’ˆåˆ¤æ–­å­—ç¬¦ä¸²é•¿åº¦
 //{
 //	char arr1[] = "hello";
 //	char *p;
@@ -35,23 +35,56 @@
 
 
 /******************************************************************/
-int strlen_my(char arr[])
+//int strlen_my(char arr[])
+//{
+//	char count = 0;
+//	char* p1;
+//	for (p1 = arr; *p1 != '\0'; p1++)
+//		{
+//			count++;
+//		}
+//	return count;
+//}
+//
+//int main()             //å¯¹ä¸Šä¸ªç¨‹åºçš„è°ƒæ•´ï¼ˆå°†åˆ¤æ–­å†…å®¹ç”¨å‡½æ•°æ¥å®ç°ï¼‰
+//{
+//	char arr1[] = "hello";
+//	char* p=arr1;
+//	int count = strlen_my(arr1);//æ•°ç»„åæ˜¯æ•°ç»„é¦–å…ƒç´ çš„åœ°å€
+//	printf("%d", count);
+//	return 0;
+//}
+/******************************************************************/
+
+/******************************************************************/
+void FindMaxCount(int length,int* Tem,int* max,int* count )//åˆ©ç”¨æŒ‡é’ˆè¿”å›ä¸¤ä¸ªè¿”å›å€¼
 {
-	char count = 0;
-	char* p1;
-	for (p1 = arr; *p1 != '\0'; p1++)
+	* max = Tem[0];
+	for(int i=1;i<length;i++)
+	{
+		if (*max < Tem[i])
 		{
-			count++;
+			*count = 1;
+			*max = Tem[i];
 		}
-	return count;
+		else if (*max == Tem[i])
+		{
+			(*count)++;
+		}
+	 }
+
 }
 
-int main()             //¶ÔÉÏ¸ö³ÌĞòµÄµ÷Õû£¨½«ÅĞ¶ÏÄÚÈİÓÃº¯ÊıÀ´ÊµÏÖ£©
+int main()
 {
-	char arr1[] = "hello";
-	char* p=arr1;
-	int count = strlen_my(arr1);//Êı×éÃûÊÇÊı×éÊ×ÔªËØµÄµØÖ·
-	printf("%d", count);
+	int arr[] = { 23,23,34,33,12,33,34,34 };
+	int Max = 0;
+	int Count = 0;
+	FindMaxCount(sizeof(arr) / sizeof(arr[0]), arr, &Max, &Count);
+	printf("Max=%d\n", Max);
+	printf("Count=%d", Count);
+
 	return 0;
 }
+
 /******************************************************************/
